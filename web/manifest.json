@@ -1,6 +1,6 @@
 {
-    "name": "practice2",
-    "short_name": "practice2",
+    "name": "cookfood",
+    "short_name": "cookfood",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

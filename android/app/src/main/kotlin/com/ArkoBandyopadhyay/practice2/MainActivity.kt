@@ -1,4 +1,4 @@
-package com.ArkoBandyopadhyay.practice2
+package com.ArkoBandyopadhyay.cookfood
 
 import io.flutter.embedding.android.FlutterActivity
 

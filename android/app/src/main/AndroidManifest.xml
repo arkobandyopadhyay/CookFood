@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ArkoBandyopadhyay.practice2">
+    package="com.ArkoBandyopadhyay.cookfood">
    <application
-        android:label="practice2"
+        android:label="Cook Food"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
