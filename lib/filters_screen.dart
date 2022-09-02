@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import './main_drawer.dart';
 
@@ -18,7 +17,6 @@ class _FiltersScreenState extends State<FiltersScreen> {
 
   Widget _buildSwitchListTile(
       Key key, String text, String text2, bool currentValue, updateValue) {
-    print(key);
     return SwitchListTile(
       key: key,
       title: Text(text),
