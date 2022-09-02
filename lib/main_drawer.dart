@@ -1,16 +1,27 @@
 import 'package:flutter/material.dart';
 import './filters_screen.dart';
+
 class MainDrawer extends StatelessWidget {
-  Widget buildListTile(String title,IconData icon,VoidCallback tapHandler){
+  const MainDrawer({Key? key}) : super(key: key);
+
+  Widget buildListTile(String title, IconData icon, VoidCallback tapHandler) {
     return ListTile(
-      leading: Icon(icon,size: 26,),
-      title: Text(title,
-        style: TextStyle(fontFamily: 'RobotoCondensed',
-      fontSize: 24,
-          fontWeight: FontWeight.bold,),),
-      onTap:tapHandler,
+      leading: Icon(
+        icon,
+        size: 26,
+      ),
+      title: Text(
+        title,
+        style: const TextStyle(
+          fontFamily: 'RobotoCondensed',
+          fontSize: 24,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      onTap: tapHandler,
     );
   }
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -19,18 +30,27 @@ class MainDrawer extends StatelessWidget {
           Container(
             height: 120,
             width: double.infinity,
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             alignment: Alignment.centerLeft,
-            color: Theme.of(context).accentColor,
-            child: Text('Cooking Up!!',style: TextStyle(
-              fontWeight: FontWeight.w900,
-              fontSize: 30,
-              color: Colors.white,
-            ),),
+            color: Theme.of(context).colorScheme.secondary,
+            child: const Text(
+              'Cooking Up!!',
+              style: TextStyle(
+                fontWeight: FontWeight.w900,
+                fontSize: 30,
+                color: Colors.white,
+              ),
+            ),
           ),
-          SizedBox(height: 20,),
-          buildListTile('Meals', Icons.restaurant,(){Navigator.of(context).pushReplacementNamed('/');}),
-          buildListTile('Filters',Icons.settings,(){Navigator.of(context).pushReplacementNamed(FiltersScreen.routeName);}),
+          const SizedBox(
+            height: 20,
+          ),
+          buildListTile('Meals', Icons.restaurant, () {
+            Navigator.of(context).pushReplacementNamed('/');
+          }),
+          buildListTile('Filters', Icons.settings, () {
+            Navigator.of(context).pushReplacementNamed(FiltersScreen.routeName);
+          }),
         ],
       ),
     );

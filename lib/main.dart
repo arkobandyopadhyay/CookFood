@@ -19,9 +19,9 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (ctx) => TabsScreen(),
-        CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
-        MealDetail.routename: (ctx) => MealDetail(),
+        '/': (ctx) => const TabsScreen(),
+        CategoryMealsScreen.routeName: (ctx) => const CategoryMealsScreen(),
+        MealDetail.routename: (ctx) => const MealDetail(),
         FiltersScreen.routeName: (ctx) => const FiltersScreen(),
       },
     );

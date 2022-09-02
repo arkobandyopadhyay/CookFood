@@ -34,7 +34,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
           'Your Filters',
         ),
       ),
-      drawer: MainDrawer(),
+      drawer: const MainDrawer(),
       body: Column(
         children: <Widget>[
           Container(
