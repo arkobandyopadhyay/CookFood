@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.ArkoBandyopadhyay" "\0"
-            VALUE "FileDescription", "practice2" "\0"
+            VALUE "FileDescription", "cookfood" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "practice2" "\0"
+            VALUE "InternalName", "cookfood" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 com.ArkoBandyopadhyay. All rights reserved." "\0"
-            VALUE "OriginalFilename", "practice2.exe" "\0"
-            VALUE "ProductName", "practice2" "\0"
+            VALUE "OriginalFilename", "cookfood.exe" "\0"
+            VALUE "ProductName", "cookfood" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
